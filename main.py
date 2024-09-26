@@ -65,8 +65,6 @@ for file in glob.glob("*.csv"):
   	
 
 
-# sort list by dict key "month"
-matches = sorted(matches, key=itemgetter("month"))
 
 months = []
 for m in matches:
@@ -79,16 +77,18 @@ log = []
 
 for month in months:
 
-    l = f">>> month:{month}"
+    l = f"-- {month} --------------------------"
     log.append(l)
     
     # create a list for the items of this month
     month_list = []
     for match in matches:
         m = match.get("month")
- 
         if m==month:
             month_list.append(match)
+
+    # sort by item name
+    month_list = sorted(month_list,key=itemgetter("item"))
             
     cat_val={}
     for key,val in k.items():
@@ -125,9 +125,6 @@ for month in months:
                     
             l=""
             log.append(l)
-
-    l="--------------------------------"
-    log.append(l)
 
 for line in log:
     print(line)
