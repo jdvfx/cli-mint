@@ -1,0 +1,19 @@
+{
+    "amazon": "#996600",
+    "bills": "#009900",
+    "booze": "#993333",
+    "cc": "#003366",
+    "clothes": "#99cc00",
+    "entertain": "#00ddff",
+    "grocery": "#ff3300",
+    "health": "#009999",
+    "holidays": "#ffdd00",
+    "house": "#ff9966",
+    "misc": "#999966",
+    "personal care": "#ff99dd",
+    "savings": "#339966",
+    "subscription": "#99ff66",
+    "takout": "#660066",
+    "travel": "#0000cc",
+    "other": "#999999"
+}
